@@ -180,7 +180,7 @@ func New(
 	nodeUpdaterClient NodeUpdaterClient,
 	exitCh chan<- error,
 ) (*Daemon, error) {
-	mock := false
+	mock := true
 	if os.Getuid() != 0 {
 		mock = true
 	}
